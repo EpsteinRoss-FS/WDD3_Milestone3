@@ -37,7 +37,12 @@ class Model {
 class View {
     constructor()
     {
+        this.loadMainPage();
         console.log("View Initialized...");
+        
+
+        this.html;
+
     }
 }
 
