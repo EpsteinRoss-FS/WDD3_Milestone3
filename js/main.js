@@ -45,7 +45,9 @@ class Controller {
 
     listFaires() {
       console.log("faireListClicked");
-      this.content.innerHTML = this.faireList;
+      let displayFaires = new Event("displayFaires");
+      displayFaires.faireList = this.faireList;
+      document.dispatchEvent(displayFaires);
     }
 
     searchPage(){
@@ -83,7 +85,9 @@ class View {
     }
 
     displayFaires(e) {
-      this.faires = e;
+      let faires = e.faireList;
+      console.log(faires);
+
     }
 }
 
