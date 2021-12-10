@@ -1,0 +1,32 @@
+[{
+    "id": 1,
+    "Name": "Kentucky Highland Renaissance Festival",
+    "Theme": "Scottish",
+    "Location": "Eminence, KY",
+    "Website": "https://www.kyrenfaire.com",
+    "Dates": "June 4th - July 17th, 2022",
+    "Reviews": [{
+            "Title": "A Fun Faire!",
+            "Review": "The Kentucky Renaissance faire, while not as big as some others, is super fun! A very family friendly show. Tickets aren't very expensive, and if you are going to go a few times may as well just get a season pass!"
+        },
+        {
+            "Title": "Had A great Time!",
+            "Review": "The Kentucky Renaissance faire, while not as big as some others, is super fun! A very family friendly show. Tickets aren't very expensive, and if you are going to go a few times may as well just get a season pass!"
+        }
+    ]
+},
+{
+    "id": 2,
+    "Name": "Ohio Renaissance Faire",
+    "Theme": "Medieval",
+    "Location": "Harveysburg, OH",
+    "Website": "https://www.renfestival.com",
+    "Dates": "September 3 - October 30, 2022",
+    "Reviews": [{
+            "Title": "A Fun Faire!",
+            "Review": "The Ohio Renaissance faire is huge!  At least a three day trip!"
+        }
+
+    ]
+}
+]
