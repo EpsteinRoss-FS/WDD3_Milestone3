@@ -23,6 +23,8 @@ class Controller {
         (this.model = new Model()),
         (this.view = new View())
 
+      this.content = document.getElementById("content");
+      console.log(this.html);
               
       var faireListLink = document.querySelectorAll(".faireListLink");
       var faireSearchLink = document.querySelectorAll(".faireSearchLink");
@@ -39,6 +41,7 @@ class Controller {
 
     listFaires() {
       console.log("faireListClicked");
+      this.content.innerHTML = "";
     }
 
     searchPage(){
