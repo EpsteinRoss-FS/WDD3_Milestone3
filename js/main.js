@@ -25,6 +25,7 @@ class Controller {
         this.faireList;
 
         this.getLists();
+        
 
       this.content = document.getElementById("content");
       console.log(this.html);
@@ -44,7 +45,7 @@ class Controller {
 
     listFaires() {
       console.log("faireListClicked");
-      this.content.innerHTML = "";
+      this.content.innerHTML = this.faireList;
     }
 
     searchPage(){
@@ -73,16 +74,26 @@ class View {
     constructor()
     {
         console.log("View Initialized...");
-        
-
+      
         this.html;
+        document.addEventListener("displayFaires", (e) => this.displayFaires(e));
 
+
+        
+    }
+
+    displayFaires(e) {
+      this.faires = e;
     }
 }
 
 
-document.addEventListener('DOMContentLoaded', function(event) {
-  (function() {this.app = App.getInstance();})();}
-)
+// window.addEventListener('DOMContentLoaded', function(event) {
+//   (function() {this.app = App.getInstance();})();}
+// )
+window.addEventListener('load', function (event) {
+  
+  (function() {this.app = App.getInstance();})();
+})
 
 
