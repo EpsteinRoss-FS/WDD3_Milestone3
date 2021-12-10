@@ -28,5 +28,27 @@
         }
 
     ]
+},
+{
+    "id": 3,
+    "Name": "Georgia Renaissance Festival",
+    "Theme": "Reign of Henry VIII",
+    "Location": "Fairburn, GA",
+    "Website": "https://www.garenfest.com",
+    "Dates": "April 9 - May 30, 2022",
+    "Reviews": [{
+            "Title": "A Great Renaissance Faire!",
+            "Review": "The Georgia Renaissance faire has so many vendors and great performers!"
+        },
+        {
+            "Title": "Don't waste your time",
+            "Review": "The Georgia Renaissance faire is horrible"
+        },
+        {
+            "Title": "We've Been Trying to Reach You",
+            "Review": "We've been trying to reach you about your cars extended warranty.  All your base are belong to us."
+        }
+
+    ]
 }
 ]
