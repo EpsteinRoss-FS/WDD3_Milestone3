@@ -23,6 +23,17 @@ class Controller {
         (this.model = new Model()),
         (this.view = new View())
 
+              
+      var fairListLink = document.querySelectorAll(".faireListLink");
+  
+      console.log(fairListLink);
+      fairListLink[0].addEventListener("click", (e) => this.listFaires(e) );
+    }
+      
+
+
+    listFaires() {
+      console.log("faireListClicked");
     }
 }
 
@@ -37,7 +48,6 @@ class Model {
 class View {
     constructor()
     {
-        this.loadMainPage();
         console.log("View Initialized...");
         
 
@@ -46,6 +56,9 @@ class View {
     }
 }
 
-(function() {
-    this.app = App.getInstance();
-})();
+
+document.addEventListener('DOMContentLoaded', function(event) {
+  (function() {this.app = App.getInstance();})();}
+)
+
+
