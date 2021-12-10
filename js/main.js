@@ -61,6 +61,8 @@ class Controller {
     async getLists() {
       this.faireList = await Data.getLists();
       console.log("Faire list is: " + this.faireList);
+
+
     }
 }
 
@@ -86,7 +88,16 @@ class View {
 
     displayFaires(e) {
       let faires = e.faireList;
-      console.log(faires);
+      // console.log(faires);
+
+      this.html = Utils.faireListHTML(faires);
+      let content = document.getElementById("content");
+
+      content.innerHTML = this.html;
+
+ 
+
+
 
     }
 }
