@@ -21,7 +21,10 @@ class Controller {
     {
         console.log("Controller initialized...");
         (this.model = new Model()),
-        (this.view = new View())
+        (this.view = new View()),
+        this.faireList;
+
+        this.getLists();
 
       this.content = document.getElementById("content");
       console.log(this.html);
@@ -50,6 +53,11 @@ class Controller {
 
     homeLink(){
       console.log("homeWasClicked");
+    }
+
+    async getLists() {
+      this.faireList = await Data.getLists();
+      console.log("Faire list is: " + this.faireList);
     }
 }
 
