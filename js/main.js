@@ -24,16 +24,29 @@ class Controller {
         (this.view = new View())
 
               
-      var fairListLink = document.querySelectorAll(".faireListLink");
-  
-      console.log(fairListLink);
-      fairListLink[0].addEventListener("click", (e) => this.listFaires(e));
+      var faireListLink = document.querySelectorAll(".faireListLink");
+      var faireSearchLink = document.querySelectorAll(".faireSearchLink");
+      var homeLink = document.querySelectorAll(".homeLink");
+      
+      
+      faireListLink[0].addEventListener("click", (e) => this.listFaires(e));
+      faireSearchLink[0].addEventListener("click", (e) => this.searchPage(e));
+      homeLink[0].addEventListener("click", (e) => this.homeLink(e));
+
     }
       
 
 
     listFaires() {
       console.log("faireListClicked");
+    }
+
+    searchPage(){
+      console.log("searchLinkClicked");
+    }
+
+    homeLink(){
+      console.log("homeWasClicked");
     }
 }
 
