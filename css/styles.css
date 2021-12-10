@@ -8,5 +8,13 @@
     font-size: 3.5rem;
 }
 
+.topnav .nav-link {
+    color: white !important;
+    font-size: 1.2rem;
 
+}
 
+.bg-main-img {
+    max-width: 100%;
+    height: auto;
+}
