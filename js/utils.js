@@ -27,7 +27,7 @@ class Utils{
                             </div>
                             
                             
-                            <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                            <a class="card-box-footer bg-primary" id="faire-id-${list[i].id}" >View More <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                    </div>`;
         }

@@ -45,9 +45,20 @@ class Controller {
 
     listFaires() {
       console.log("faireListClicked");
+      
       let displayFaires = new Event("displayFaires");
+      
       displayFaires.faireList = this.faireList;
+      
       document.dispatchEvent(displayFaires);
+
+      for(let i = 0; i < this.faireList.length; i++){
+        
+        // let element = document.getElementById("faire-id-" + (i+1)).parentElement.children[0].children[0].innerHTML;
+        let element = document.getElementById("faire-id-" + (i+1));
+        element.addEventListener("click", (e) => this.viewMoreClicked(i));
+      }
+
     }
 
     searchPage(){
@@ -63,6 +74,11 @@ class Controller {
       console.log("Faire list is: " + this.faireList);
 
 
+    }
+
+    viewMoreClicked(e){
+      console.log(e);
+      console.log(this.faireList[e]);
     }
 }
 
@@ -96,6 +112,7 @@ class View {
       content.innerHTML = this.html;
 
  
+      document.createE
 
 
 
