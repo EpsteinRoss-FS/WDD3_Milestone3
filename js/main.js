@@ -27,7 +27,7 @@ class Controller {
       var fairListLink = document.querySelectorAll(".faireListLink");
   
       console.log(fairListLink);
-      fairListLink[0].addEventListener("click", (e) => this.listFaires(e) );
+      fairListLink[0].addEventListener("click", (e) => this.listFaires(e));
     }
       
 
