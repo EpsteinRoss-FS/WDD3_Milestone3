@@ -1,7 +1,5 @@
 class Utils {
     static faireListHTML(list) {
-        this.html = "";
-
         let html = `<div class="row faire-list-row">`
 
         for (let i = 0; i < list.length; i++) {

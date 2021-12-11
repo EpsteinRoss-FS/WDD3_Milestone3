@@ -26,11 +26,11 @@ class Controller {
         this.getLists();
 
         this.content = document.getElementById("content");
-        console.log(this.html);
 
-        var faireListLink = document.querySelectorAll(".faireListLink");
-        var faireSearchLink = document.querySelectorAll(".faireSearchLink");
-        var homeLink = document.querySelectorAll(".homeLink");
+
+        let faireListLink = document.querySelectorAll(".faireListLink");
+        let faireSearchLink = document.querySelectorAll(".faireSearchLink");
+        let homeLink = document.querySelectorAll(".homeLink");
 
 
         faireListLink[0].addEventListener("click", (e) => this.listFaires(e));
