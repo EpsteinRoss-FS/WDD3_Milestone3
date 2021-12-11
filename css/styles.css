@@ -93,6 +93,11 @@
     background-color: #d9534f !important;
 }
 
+.bg-darkblue {
+    background-color: #4c9aad !important;
+
+}
+
 .faire-list-row{
     justify-content: center;
 }
@@ -126,3 +131,7 @@
     
 }
 
+.reivew-inner{
+    
+    color: black;
+}

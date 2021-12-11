@@ -45,7 +45,7 @@ class Utils{
         let html = 
         `
         <div class="row">
-        <div class="col-lg-11    faire-box">    
+        <div class="col-lg-11 faire-box">    
             
                 <div class="card-box bg-info">
                 <div class="col">
@@ -56,20 +56,42 @@ class Utils{
                     <div class="inner faire-data">
 
                         <h3> ${faire.Name} </h3>
-                        <p> 
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <span class="faire-loc">${faire.Location}</span>  |  ${faire.Dates}
-                                </div>
-                            </div> 
+                            <p> 
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span class="faire-loc">${faire.Location}</span>  |  ${faire.Dates}
+                                    </div>
+                                </div> 
 
-                            <p>Theme/Setting: ${faire.Theme}</p>
-                            <a href="${faire.Website}" class="faire-site-link">Website</a>
+                                <p>Theme/Setting: ${faire.Theme}</p>
+                                <a href="${faire.Website}" class="faire-site-link">Website</a>
+                                
+                            </p>
                             </div>
-                        </p>
 
-                    
-                    </div>
+                    `;
+
+            for(let i = 0; i < faire.Reviews.length; i++){
+                html += `
+                <div class="row review-row">
+                <div class="col review-list-box">    
+                        <div class="card-box review-box bg-darkblue">
+                            <div class="inner review-inner">
+                                <h3> ${faire.Reviews[i].Title} </h3>
+                                <p> 
+                                    <div class="row">
+                                    ${faire.Reviews[i].Review}
+                                    </div> 
+                                </p>
+                            </div>
+            
+                        </div>
+                        </div>
+                   </div>`;
+            }
+            
+            
+         html += `</div>
 
                   
             </div>
