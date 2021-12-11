@@ -26,6 +26,9 @@ class Controller {
 
         this.getLists();
         
+        
+        
+    
 
       this.content = document.getElementById("content");
       console.log(this.html);
@@ -38,6 +41,7 @@ class Controller {
       faireListLink[0].addEventListener("click", (e) => this.listFaires(e));
       faireSearchLink[0].addEventListener("click", (e) => this.searchPage(e));
       homeLink[0].addEventListener("click", (e) => this.homeLink(e));
+
 
     }
       
@@ -138,5 +142,3 @@ window.addEventListener('load', function (event) {
   
   (function() {this.app = App.getInstance();})();
 })
-
-

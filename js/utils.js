@@ -40,24 +40,42 @@ class Utils{
 
     static singleFairePage(data){
         let faire = data.selectedFaire;
-        
+        console.log(faire);
 
-        let html = `<div class="col-lg-10 faire-box">    
-        <div class="card-box bg-info">
-            <div class="inner faire-data">
-                <h3> ${faire.Name} </h3>
-                <p> 
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <span class="faire-loc">${faire.Location}</span>  |  ${faire.Dates}
-                        </div>
-                    </div> 
+        let html = 
+        `
+        <div class="row">
+        <div class="col-lg-11    faire-box">    
+            
+                <div class="card-box bg-info">
+                <div class="col">
+                    <img src="./assets/faireimgs/${faire.Images[0]}" class="faire-img-1">
+                </div>
+                <div class="col">
+               
+                    <div class="inner faire-data">
 
-                    <a href="${faire.Website}" class="faire-site-link">Website</a>
-                </p>
+                        <h3> ${faire.Name} </h3>
+                        <p> 
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <span class="faire-loc">${faire.Location}</span>  |  ${faire.Dates}
+                                </div>
+                            </div> 
+
+                            <p>Theme/Setting: ${faire.Theme}</p>
+                            <a href="${faire.Website}" class="faire-site-link">Website</a>
+                            </div>
+                        </p>
+
+                    
+                    </div>
+
+                  
             </div>
-        </div>
-   </div>`;
+            
+            </div>
+        </div>`;
 
 
         return html;

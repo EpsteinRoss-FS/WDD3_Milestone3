@@ -3,6 +3,12 @@
     bottom: 0;
 }
 
+#content{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    overflow: auto;
+}
+
 .topnav .navbar-brand {
     color: #4e78ff !important;
     font-size: 3.5rem;
@@ -113,3 +119,10 @@
     font-style: italic;
     text-decoration: none;
 }
+
+.faire-img-1{
+    max-width: 20%;
+    box-shadow: 3px 3px 3px black;
+    
+}
+
