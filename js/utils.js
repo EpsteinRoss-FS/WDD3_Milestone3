@@ -1,16 +1,11 @@
-class Utils{
-   
-   
-   
+class Utils {
     static faireListHTML(list) {
         this.html = "";
-    
 
         let html = `<div class="row faire-list-row">`
-       
-        for (let i = 0; i < list.length; i++)
-        {
-        html += `<div class="col-lg-10 faire-list-box">    
+
+        for (let i = 0; i < list.length; i++) {
+            html += `<div class="col-lg-10 faire-list-box">    
                         <div class="card-box bg-info">
                             <div class="inner">
                                 <h3> ${list[i].Name} </h3>
@@ -25,20 +20,18 @@ class Utils{
                                     </div> 
                                 </p>
                             </div>
-                            
-                            
                             <a class="card-box-footer bg-primary" id="faire-id-${list[i].id}" >View More <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
                    </div>`;
         }
-      
-  
-  
+
+
+
         html += `</div>`
-     return html;
+        return html;
     }
 
-    static singleFairePage(data){
+    static singleFairePage(data) {
         let faire = data.selectedFaire;
 
         let html = `<section class="section about-section gray-bg" id="about">
@@ -69,10 +62,8 @@ class Utils{
                         <h3 class="center-text reviews-header">Reviews</h3>
                             <div class="row">
                          `
-            for(let i = 0; i < faire.Reviews.length; i++){
-                html += `
-
-<!--                <div class="row review-row">-->
+        for (let i = 0; i < faire.Reviews.length; i++) {
+            html += `
                 <div class="col review-list-box">
                         <div class="card-box review-box bg-darkblue">
                             <div class="inner review-inner">
@@ -85,12 +76,11 @@ class Utils{
                             </div>
 
                         </div>
-<!--                        </div>-->
                    </div>`;
-            }
+        }
 
 
-                         html +=`</div>
+        html += `</div>
                                 
                         </div>
                     </div>
