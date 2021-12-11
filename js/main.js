@@ -77,8 +77,15 @@ class Controller {
     }
 
     viewMoreClicked(e){
-      console.log(e);
-      console.log(this.faireList[e]);
+      
+      let displaySingleFaire = new Event("displaySingleFaire");
+      displaySingleFaire.selectedFaire = this.faireList[e];
+      document.dispatchEvent(displaySingleFaire);
+
+
+
+
+
     }
 }
 
@@ -98,6 +105,8 @@ class View {
         this.html;
         document.addEventListener("displayFaires", (e) => this.displayFaires(e));
 
+        document.addEventListener("displaySingleFaire", (e) => this.displaySingleFaire(e));
+
 
         
     }
@@ -110,12 +119,10 @@ class View {
       let content = document.getElementById("content");
 
       content.innerHTML = this.html;
+    }
 
- 
-      document.createE
-
-
-
+    displaySingleFaire(e){
+      console.log(e.selectedFaire);
     }
 }
 
