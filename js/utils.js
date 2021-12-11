@@ -48,11 +48,8 @@ class Utils{
                 <h3> ${faire.Name} </h3>
                 <p> 
                     <div class="row">
-                        <div class="col-sm-2">
-                            ${faire.Location}
-                        </div>
-                        <div class="col-sm-2">
-                            ${faire.Dates}
+                        <div class="col-sm-4">
+                            <span class="faire-loc">${faire.Location}</span>  |  ${faire.Dates}
                         </div>
                     </div> 
 

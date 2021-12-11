@@ -10,7 +10,7 @@
 
 .topnav .nav-link {
     color: white !important;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -96,6 +96,20 @@
     margin-right: auto;
 }
 
-.faire-data{
-    
+.faire-loc{
+    font-weight: bold;
+}
+
+.faire-site-link {
+    color: blue;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.faire-site-link:hover {
+    color: rgb(190, 190, 190);
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
 }
