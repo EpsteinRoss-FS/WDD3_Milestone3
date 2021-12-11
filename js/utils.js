@@ -68,16 +68,17 @@ class Utils{
                                 
                             </p>
                             </div>
-
+                            <h4 class="reviews-header">REVIEWS</h4>
                     `;
 
             for(let i = 0; i < faire.Reviews.length; i++){
                 html += `
+                
                 <div class="row review-row">
                 <div class="col review-list-box">    
                         <div class="card-box review-box bg-darkblue">
                             <div class="inner review-inner">
-                                <h3> ${faire.Reviews[i].Title} </h3>
+                                <h3 class="reviews-header"> ${faire.Reviews[i].Title} </h3>
                                 <p> 
                                     <div class="row">
                                     ${faire.Reviews[i].Review}
