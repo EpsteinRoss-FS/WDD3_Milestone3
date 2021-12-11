@@ -5,10 +5,6 @@ h3 {
     font-family: 'Cinzel', serif;
 }
 
-.footer{
-    position:absolute;
-    bottom: 0;
-}
 
 #content{
     padding-top: 7rem;
@@ -80,15 +76,7 @@ h3 {
 .card-box p {
     font-size: 15px;
 }
-.card-box .icon {
-    position: absolute;
-    top: auto;
-    bottom: 5px;
-    right: 5px;
-    z-index: 0;
-    font-size: 72px;
-    color: rgba(0, 0, 0, 0.15);
-}
+
 .card-box .card-box-footer {
     position: absolute;
     left: 0px;
@@ -104,18 +92,6 @@ h3 {
 .card-box:hover .card-box-footer {
     background: rgba(0, 0, 0, 0.3);
 }
-.bg-blue {
-    background-color: #00c0ef !important;
-}
-.bg-green {
-    background-color: #00a65a !important;
-}
-.bg-orange {
-    background-color: #f39c12 !important;
-}
-.bg-red {
-    background-color: #d9534f !important;
-}
 
 .bg-darkblue {
     background-color: #4c9aad !important;
@@ -125,40 +101,11 @@ h3 {
 .faire-list-row{
     justify-content: center;
 }
-
-.faire-box {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.faire-loc{
-    font-weight: bold;
-}
-
-.faire-site-link {
-    color: blue;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.faire-site-link:hover {
-    color: rgb(190, 190, 190);
-    font-size: 1.3rem;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: none;
-}
-
 .faire-img-1{
     max-width: 80%;
     box-shadow: 3px 3px 3px black;
     margin-bottom: 1%;
     border-radius: 30px;
-}
-
-.reivew-inner{
-    
-    color: black;
 }
 
 .reviews-header{
