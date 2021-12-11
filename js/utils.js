@@ -38,4 +38,32 @@ class Utils{
      return html;
     }
 
+    static singleFairePage(data){
+        let faire = data.selectedFaire;
+        
+
+        let html = `<div class="col-lg-10 faire-box">    
+        <div class="card-box bg-info">
+            <div class="inner faire-data">
+                <h3> ${faire.Name} </h3>
+                <p> 
+                    <div class="row">
+                        <div class="col-sm-2">
+                            ${faire.Location}
+                        </div>
+                        <div class="col-sm-2">
+                            ${faire.Dates}
+                        </div>
+                    </div> 
+
+                    <a href="${faire.Website}" class="faire-site-link">Website</a>
+                </p>
+            </div>
+        </div>
+   </div>`;
+
+
+        return html;
+    }
+
 }

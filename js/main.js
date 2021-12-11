@@ -122,7 +122,11 @@ class View {
     }
 
     displaySingleFaire(e){
-      console.log(e.selectedFaire);
+      // console.log(e.selectedFaire);
+
+      this.html = Utils.singleFairePage(e);
+      content.innerHTML = this.html;
+
     }
 }
 
